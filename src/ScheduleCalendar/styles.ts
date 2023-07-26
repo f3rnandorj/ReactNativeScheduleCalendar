@@ -9,25 +9,25 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   padding: ${RFValue(20)}px ${RFValue(35)}px ${RFValue(20)}px ${RFValue(35)}px;
-  background-color: ${({theme}) => theme.colors.dashboard_light};
+  background-color: ${({theme}) => theme.colors.background_yellow};
 
   border-bottom-left-radius: 40px;
 `;
 
 export const SubHeaderWrapper = styled.View`
-  border-color: ${({theme}) => theme.colors.dashboard_light};
-  background-color: ${({theme}) => theme.colors.dashboard_light};
+  border-color: ${({theme}) => theme.colors.background_yellow};
+  background-color: ${({theme}) => theme.colors.background_yellow};
 `;
 
 export const SubHeader = styled.View`
   padding: 0 ${RFValue(35)}px ${RFValue(20)}px ${RFValue(35)}px;
   border-top-right-radius: 20px;
-  border-color: ${({theme}) => theme.colors.dashboard_light};
+  border-color: ${({theme}) => theme.colors.background_yellow};
   background-color: ${({theme}) => theme.colors.background_shape};
 `;
 
 export const Title = styled.Text`
-  color: ${({theme}) => theme.colors.background_primary_dark};
+  color: ${({theme}) => theme.colors.shape_contrast};
   font-size: ${({theme}) => theme.font_size.xxl}px;
 `;
 
@@ -39,7 +39,7 @@ export const Day = styled.Text`
 `;
 
 export const InfoDate = styled.Text`
-  color: ${({theme}) => theme.colors.dashboard_dark};
+  color: ${({theme}) => theme.colors.background_blue};
   font-size: ${({theme}) => theme.font_size.sm}px;
   font-weight: bold;
 
@@ -60,11 +60,11 @@ export const ContainerEmptyComponent = styled.View`
   border-radius: ${RFValue(20)}px;
   border-color: ${({theme}) => theme.colors.border};
 
-  background-color: ${({theme}) => theme.colors.background_gray_500};
+  background-color: ${({theme}) => theme.colors.background_gray_200};
 `;
 
 export const EmptyMessage = styled.Text`
-  color: ${({theme}) => theme.colors.background_gray_300};
+  color: ${({theme}) => theme.colors.background_gray_100};
   font-size: ${({theme}) => theme.font_size.sm}px;
   font-weight: bold;
 `;

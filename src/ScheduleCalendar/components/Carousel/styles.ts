@@ -44,7 +44,7 @@ export const DayWrapperButton = styled.TouchableOpacity<ButtonVariants>`
   margin-left: ${RFValue(4)}px;
   margin-right: ${RFValue(4)}px;
 
-  border: 2px solid ${({theme}) => theme.colors.background_gray_700};
+  border: 2px solid ${({theme}) => theme.colors.background_gray_200};
   border-radius: ${RFValue(20)}px;
 
   elevation: 0.2;
@@ -54,25 +54,25 @@ export const DayWrapperButton = styled.TouchableOpacity<ButtonVariants>`
   ${({selectedDate}) =>
     selectedDate &&
     css`
-      background-color: ${({theme}) => theme.colors.dashboard_dark};
+      background-color: ${({theme}) => theme.colors.background_blue};
     `}
 
   ${({weekend}) =>
     weekend &&
     css`
-      background-color: ${({theme}) => theme.colors.background_gray_500};
+      background-color: ${({theme}) => theme.colors.background_gray_200};
     `}
 
   ${({weekend, selectedDate}) =>
     weekend &&
     selectedDate &&
     css`
-      background-color: ${({theme}) => theme.colors.dashboard_dark};
+      background-color: ${({theme}) => theme.colors.background_blue};
     `}
 `;
 
 export const DayTitle = styled.Text<ButtonVariants>`
-  color: ${({theme}) => theme.colors.dashboard_dark};
+  color: ${({theme}) => theme.colors.background_blue};
   font-size: ${({theme}) => theme.font_size.sm}px;
   font-weight: bold;
 
@@ -84,7 +84,7 @@ export const DayTitle = styled.Text<ButtonVariants>`
   ${({weekend}) =>
     weekend &&
     css`
-      color: ${({theme}) => theme.colors.dashboard_dark};
+      color: ${({theme}) => theme.colors.background_blue};
     `}
     ${({weekend, selectedDate}) =>
     weekend &&
@@ -95,7 +95,7 @@ export const DayTitle = styled.Text<ButtonVariants>`
 `;
 
 export const DayNumber = styled.Text<ButtonVariants>`
-  color: ${({theme}) => theme.colors.dashboard_dark};
+  color: ${({theme}) => theme.colors.background_blue};
   font-size: ${({theme}) => theme.font_size.lg}px;
   font-weight: bold;
 
@@ -108,7 +108,7 @@ export const DayNumber = styled.Text<ButtonVariants>`
   ${({weekend}) =>
     weekend &&
     css`
-      color: ${({theme}) => theme.colors.dashboard_dark};
+      color: ${({theme}) => theme.colors.background_blue};
     `}
 
   ${({weekend, selectedDate}) =>
@@ -126,7 +126,7 @@ export const ContainerDayNumber = styled.View<ButtonVariants>`
     dayWithInspection &&
     css`
       border-bottom-width: 2px;
-      border-color: ${({theme}) => theme.colors.dashboard_dark};
+      border-color: ${({theme}) => theme.colors.background_blue};
     `}
 
   ${({selectedDate, dayWithInspection}) =>
@@ -142,7 +142,7 @@ export const ContainerDayNumber = styled.View<ButtonVariants>`
     dayWithInspection &&
     css`
       border-bottom-width: 2px;
-      border-color: ${({theme}) => theme.colors.dashboard_dark};
+      border-color: ${({theme}) => theme.colors.background_blue};
     `}
 
     
@@ -160,5 +160,5 @@ export const ButtonIcon = styled.TouchableOpacity``;
 
 export const Icon = styled(MaterialIcon).attrs(({theme}) => ({
   size: 36,
-  color: theme.colors.background_primary_light,
+  color: theme.colors.shape_contrast,
 }))`` as IconType;

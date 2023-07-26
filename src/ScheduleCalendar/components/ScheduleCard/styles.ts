@@ -34,7 +34,7 @@ export const Marker = styled.View`
 `;
 
 export const Hour = styled.Text`
-  color: ${({theme}) => theme.colors.background_primary_dark};
+  color: ${({theme}) => theme.colors.shape_contrast};
   font-size: ${({theme}) => theme.font_size.md}px;
 
   margin-left: ${RFValue(7)}px;
@@ -46,7 +46,7 @@ export const RightSide = styled.TouchableOpacity`
   flex-direction: column;
   justify-content: center;
 
-  background-color: ${({theme}) => theme.colors.background_gray_600};
+  background-color: ${({theme}) => theme.colors.background_gray_200};
 
   margin-left: ${RFValue(18)}px;
   padding-left: ${RFValue(26)}px;

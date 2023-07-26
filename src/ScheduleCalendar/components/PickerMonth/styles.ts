@@ -43,7 +43,7 @@ export const DropDown = styled.ScrollView.attrs({
   width: 100%;
 
   elevation: 4;
-  border: 1px solid ${({theme}) => theme.colors.background_gray_700};
+  border: 1px solid ${({theme}) => theme.colors.background_gray_200};
 
   background-color: ${({theme}) => theme.colors.background_shape};
 `;
